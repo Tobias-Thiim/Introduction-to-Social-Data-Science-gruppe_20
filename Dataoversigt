@@ -1,0 +1,23 @@
+#### Struktur dokument
+
+
+#Data
+Huse til salg fra Boligsiden
+type: API
+Grænse: Max calls 10.000
+Antal observationer: 37.300
+Variable:
+Adresse og kordinater
+
+Huse til salg fra Boliga
+
+
+Joboplsag fra jobnet:
+Antal observationer: 17.980
+Variable:
+Adresse og kordinater
+
+
+Stationer fra DSB:
+Antal observationer: 320
+Variable: kordinater
