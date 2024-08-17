@@ -278,8 +278,25 @@ def calculate_job_count_5km(real_estate_gdf, job_listings_gdf, projected_crs="EP
 
 
 def prepare_ml_dataset(real_estate_with_density):
-    ml_dataset = real_estate_with_density[['priceCash', 'job_density', 'distance_to_job_center', 'job_count_5km']]
-    return ml_dataset.dropna()
+    # Step 1: Filter out the unwanted address types
+    excluded_types = ["holiday house", "cooperative", "holiday plot", "houseboat"]
+    filtered_df = real_estate_with_density[~real_estate_with_density['addressType'].isin(excluded_types)]
+
+    # Step 2: Select the original and new variables for machine learning
+    ml_dataset = filtered_df[[
+        'priceCash', 'job_density', 'distance_to_job_center', 'job_count_5km', 
+        'distinction', 'daysOnMarket', 'energyLabel', 'hasBalcony', 'hasElevator', 
+        'hasTerrace', 'highlighted', 'housingArea', 'lotArea', 'monthlyExpense',
+        'numberOfBathrooms', 'numberOfFloors', 'numberOfRooms', 'numberOfToilets', 
+        'pageViews', 'perAreaPrice', 'realtor', 'timeOnMarket', 'utilitiesConnectionFee', 
+        'weightedArea', 'yearBuilt', 'basementArea', 'lat', 'lon', 'geometry'
+    ]]
+    
+    # Step 3: Drop any rows with NaN values
+    ml_dataset = ml_dataset.dropna()
+
+    return ml_dataset
+
 
 def plot_price_vs_job_density(ml_dataset):
     """Plot Property Price vs Job Density"""
@@ -359,7 +376,11 @@ def plot_heatmap_with_jobs_overlaid(real_estate_with_density, job_centers):
     plt.show()
 
 def plot_house_prices_by_job_density(ml_dataset):
-    ml_dataset['job_density_quartile'] = pd.qcut(ml_dataset['job_density'], q=4, labels=['Low', 'Medium-Low', 'Medium-High', 'High'])
+    # Define custom bins for job density
+    bins = [0, 1, 10, 50, ml_dataset['job_density'].max()]
+    labels = ['Very Low', 'Low', 'Medium', 'High']
+
+    ml_dataset['job_density_quartile'] = pd.cut(ml_dataset['job_density'], bins=bins, labels=labels)
 
     plt.figure(figsize=(12, 6))
     sns.boxplot(x='job_density_quartile', y='priceCash', data=ml_dataset)
@@ -367,6 +388,8 @@ def plot_house_prices_by_job_density(ml_dataset):
     plt.xlabel("Job Density Quartile")
     plt.ylabel("Price (DKK)")
     plt.show()
+
+
 
 
 def dist_distance_nearest_center(ml_dataset):
