@@ -14,6 +14,7 @@ import ast
 import matplotlib.pyplot as plt
 from pyproj import Transformer
 from geopy.distance import geodesic
+from scipy.spatial import KDTree
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
@@ -204,6 +205,42 @@ class JobScraper:
         with open(self.completed_pages_file, 'w') as f:
             json.dump(list(self.completed_pages), f)
 
+
+def get_and_clean_stations():
+    url_station = "https://www.dsb.dk/api/stations/getstationlist"
+    
+    # Step 1: Fetch station data
+    response_station = requests.get(url_station)
+    response_station_json = response_station.json()
+    
+    # Step 2: Convert response to DataFrame
+    station_df = pd.DataFrame(response_station_json)
+    
+    # Step 3: Clean the latitude and longitude columns
+    station_df['stationLatitude'] = station_df['stationLatitude'].str.replace(',', '.').astype(float)
+    station_df['stationLongitude'] = station_df['stationLongitude'].str.replace(',', '.').astype(float)
+    
+    # Step 4: Clean station names
+    def clean_station_name(name):
+        return name.replace(' Station', '')
+    
+    station_df['stationName'] = [clean_station_name(name) for name in station_df['stationName']]
+    
+    # Step 5: Apply specific name replacements
+    station_df['stationName'] = [
+        'Viby Jylland' if station == 'Viby J' else
+        'Nivå' if station == 'Nivå Station' else
+        'Højby (Fyn)' if station == 'Højby Fyn station' else
+        'CPH Lufthavn ✈︎' if station == 'Københavns Lufthavn (CPH Airport)' else
+        'Nykbing F' if station == 'Nykøbing sj' else
+        'Viby Sj' if station == 'Viby Sjælland' else
+        'Aalborg Lufthavn ✈︎' if station == 'Aalborg Lufthavn' else
+        station 
+        for station in station_df['stationName']
+    ]
+    
+    return station_df
+
 # Define the log function to gather the log information
 def log(response,logfile,output_path=os.getcwd()):
     if os.path.isfile(logfile):
@@ -341,6 +378,48 @@ def calculate_job_count_5km(real_estate_gdf, job_listings_gdf, projected_crs="EP
 
 
 
+def process_and_calculate_nearest_station(real_estate_df, station_df_med_afgange):
+    # Function to safely convert to float
+    def safe_float_convert(value):
+        if isinstance(value, (float, int)):
+            return float(value)
+        elif isinstance(value, str):
+            return float(value.replace(',', '.'))
+        else:
+            raise ValueError(f"Unexpected type: {type(value)}")
+    
+    # Apply the conversion
+    station_df_med_afgange['stationLatitude'] = station_df_med_afgange['stationLatitude'].apply(safe_float_convert)
+    station_df_med_afgange['stationLongitude'] = station_df_med_afgange['stationLongitude'].apply(safe_float_convert)
+    
+    # Extract coordinates
+    house_coords = real_estate_df[['latitude', 'longitude']].values
+    station_coords = station_df_med_afgange[['stationLatitude', 'stationLongitude']].values
+    
+    # Create KDTree
+    station_tree = KDTree(station_coords)
+    
+    # Function to find nearest station info
+    def find_nearest_station_info(house_coord, station_tree, stations, station_df):
+        distance, index = station_tree.query(house_coord, k=1)
+        nearest_station = stations[index]
+        geodesic_distance = geodesic(house_coord, nearest_station).kilometers
+        station_name = station_df.iloc[index]['Station_x']
+        departures = station_df.iloc[index]['Afgange_x']
+        return geodesic_distance, station_name, departures
+    
+    # Apply function to all houses
+    nearest_station_info = [find_nearest_station_info(house, station_tree, station_coords, station_df_med_afgange) for house in house_coords]
+    
+    # Add new columns
+    real_estate_df['distance_to_nearest_station'] = [info[0] for info in nearest_station_info]
+    real_estate_df['nearest_station_name'] = [info[1] for info in nearest_station_info]
+    real_estate_df['departures_per_hour'] = [info[2] for info in nearest_station_info]
+    
+    return real_estate_df
+
+
+
 def prepare_ml_dataset(real_estate_with_density):
     # Step 1: Filter out the unwanted address types
     excluded_types = ["holiday house", "cooperative", "holiday plot", "houseboat"]
@@ -348,7 +427,7 @@ def prepare_ml_dataset(real_estate_with_density):
 
     # Step 2: Select the original and new variables for machine learning
     ml_dataset = filtered_df[[
-        'priceCash', 'job_density', 'distance_to_job_center', 'job_count_5km', 
+        'priceCash', 'distance_to_nearest_station', 'job_density', 'distance_to_job_center', 'job_count_5km', 
         'distinction', 'daysOnMarket', 'energyLabel', 'hasBalcony', 'hasElevator', 
         'hasTerrace', 'highlighted', 'housingArea', 'lotArea', 'monthlyExpense',
         'numberOfBathrooms', 'numberOfFloors', 'numberOfRooms', 'numberOfToilets', 
@@ -377,7 +456,7 @@ def prepare_ml_dataset_boliga(real_estate_with_density):
 
     # Step 4: Select the original and new variables for machine learning
     ml_dataset = filtered_df[[
-        'geometry', 'job_density', 'distance_to_job_center', 'job_count_5km', 'latitude', 'longitude', 'propertyType', 'energyClass', 'priceCash', 'selfsale', 'rooms', 'size', 'lotSize', 'floor', 'buildYear', 'city', 'isForeclosure', 'zipCode', 'area', 'daysForSale', 'net', 'exp', 'basementSize', 'views', 'projectSaleUrl', 'additionalBuildings', 'businessArea', 'nonPremiumDiscrete', 'cleanStreet'
+        'geometry', 'job_density', 'distance_to_nearest_station', 'distance_to_job_center', 'job_count_5km', 'latitude', 'longitude', 'propertyType', 'energyClass', 'priceCash', 'selfsale', 'rooms', 'size', 'lotSize', 'floor', 'buildYear', 'city', 'isForeclosure', 'zipCode', 'area', 'daysForSale', 'net', 'exp', 'basementSize', 'views', 'projectSaleUrl', 'additionalBuildings', 'businessArea', 'nonPremiumDiscrete', 'cleanStreet'
     ]]
 
     # Step 5: Drop rows only if there are missing values in the key columns
@@ -385,6 +464,124 @@ def prepare_ml_dataset_boliga(real_estate_with_density):
 
     return ml_dataset
 
+
+
+def prepare_ml_dataset_overall(real_estate_df):
+    # Step 0: Initial number of listings
+    initial_count = len(real_estate_df)
+    print(f"Step 0: Initial number of listings: {initial_count}")
+    
+    # Step 1: Filter out the unwanted address types (4: Andelsboliger, 5: Fritidshuse, 8: Fritidsgrunde)
+    excluded_types = [4, 5, 8]
+    filtered_df = real_estate_df[~real_estate_df['propertyType'].isin(excluded_types)].reset_index(drop=True)
+    step1_count = len(filtered_df)
+    print(f"Step 1: Filter out unwanted address types. Removed {initial_count - step1_count} listings. Remaining: {step1_count}")
+    
+    # Step 2: Rename 'price' to 'priceCash'
+    filtered_df = filtered_df.rename(columns={'price': 'priceCash'})
+    print(f"Step 2: Rename 'price' to 'priceCash'. Removes none. Remaining: {step1_count}")
+    
+    # Step 3: Filter out rows where latitude and longitude are outside the Denmark bounds
+    before_step3_count = len(filtered_df)
+    filtered_df = filtered_df[
+        (filtered_df['latitude'] >= 54.5) & (filtered_df['latitude'] <= 57.8) &
+        (filtered_df['longitude'] >= 7.5) & (filtered_df['longitude'] <= 15.3)
+    ]
+    step3_count = len(filtered_df)
+    print(f"Step 3: Filter out long+lat outside of Denmark. Removed {before_step3_count - step3_count} listings. Remaining: {step3_count}")
+    
+    # Step 4: Filter out properties with price less than 29,500
+    before_step4_count = len(filtered_df)
+    filtered_df = filtered_df[filtered_df['priceCash'] > 29500]
+    step4_count = len(filtered_df)
+    print(f"Step 4: Filter out properties with price < 29,500. Removed {before_step4_count - step4_count} listings. Remaining: {step4_count}")
+
+    # Step 5: Remove properties with size less than 10 sqm unless they are of specific property types (7 or 8)
+    before_step5_count = len(filtered_df)
+    filtered_df = filtered_df.loc[
+        (filtered_df['size'] >= 10) | 
+        (filtered_df['propertyType'].isin([7, 8]))
+    ]
+    step5_count = len(filtered_df)
+    print(f"Step 5: Remove properties with size < 10 sqm. Removed {before_step5_count - step5_count} listings. Remaining: {step5_count}")
+    
+    # Step 6: Remove specific properties (garages) identified by street names
+    before_step6_count = len(filtered_df)
+    filtered_df = filtered_df.loc[
+        (~filtered_df['street'].isin(["Løvholmen 14, st.. 10.", "Store Kongensgade 90, st.. 4."]))
+    ]
+    step6_count = len(filtered_df)
+    print(f"Step 6: Remove specific properties (garages). Removed {before_step6_count - step6_count} listings. Remaining: {step6_count}")
+    
+    # Step 7: Sort by 'createdDate' in ascending order to ensure the oldest observations are kept
+    filtered_df = filtered_df.sort_values(by='createdDate')
+    print(f"Step 7: Sort by 'createdDate'. No removals. Remaining: {step6_count}")
+    
+    # Step 8: Split the dataframe based on PropertyType
+    df_type1 = filtered_df[filtered_df['propertyType'] == 1]
+    df_type2 = filtered_df[filtered_df['propertyType'] == 2]
+    df_type3 = filtered_df[filtered_df['propertyType'] == 3]
+    df_type6 = filtered_df[filtered_df['propertyType'] == 6]
+    df_type7 = filtered_df[filtered_df['propertyType'] == 7]
+
+    # Step 9: Drop duplicates based on certain columns depending on the property type
+    before_step9_count = len(filtered_df)
+    df_type1 = df_type1.drop_duplicates(subset=['street', 'zipCode'])
+    df_type2 = df_type2.drop_duplicates(subset=['street', 'zipCode', 'size'])
+    df_type3 = df_type3.drop_duplicates(subset=['street', 'zipCode', 'size'])
+    df_type6 = df_type6.drop_duplicates(subset=['street', 'zipCode', 'lotSize'])
+    df_type7 = df_type7.drop_duplicates(subset=['street', 'zipCode'])
+    filtered_df = pd.concat([df_type1, df_type2, df_type3, df_type6, df_type7])
+    step9_count = len(filtered_df)
+    print(f"Step 9: Drop duplicates. Removed {before_step9_count - step9_count} listings. Remaining: {step9_count}")
+    
+    # Step 10: Reset index if needed
+    filtered_df.reset_index(drop=True, inplace=True)
+    print(f"Step 10: Reset index. No removals. Remaining: {step9_count}")
+    
+    # Step 11: Correct energyClass to uppercase and handle specific energyClass replacements
+    filtered_df['energyClass'] = filtered_df['energyClass'].str.upper()
+    mapping = {'M': 'A2', 'K': 'A10', 'J': 'A15', 'I': 'A20'}
+    filtered_df['energyClass'] = filtered_df['energyClass'].replace(mapping)
+    print(f"Step 11: Correct energyClass to uppercase and handle specific replacements. No removals. Remaining: {step9_count}")
+    
+    # Step 12: Set 'rooms' to NaN where 'rooms' == 0 and 'propertyType' is not 7 or 8
+    filtered_df.loc[(filtered_df['rooms'] == 0) & (~filtered_df['propertyType'].isin([7, 8])), 'rooms'] = np.nan
+    print(f"Step 12: Set 'rooms' to NaN where 'rooms' == 0 and 'propertyType' is not 7 or 8. No removals. Remaining: {step9_count}")
+    
+    # Step 13: Set 'lotSize' to NaN where it is 0 or 1 and the property is not an apartment (propertyType 3)
+    filtered_df.loc[(filtered_df['lotSize'].isin([0, 1])) & (filtered_df['propertyType'] != 3), 'lotSize'] = np.nan
+    print(f"Step 13: Set 'lotSize' to NaN where it is 0 or 1 and the property is not an apartment. No removals. Remaining: {step9_count}")
+    
+    # Step 14: Set 'buildYear' to NaN if it is before 1575 or if the property type is 7 or 8 (grunds or grunde)
+    filtered_df.loc[(filtered_df['buildYear'] < 1575), 'buildYear'] = np.nan
+    filtered_df.loc[(filtered_df['propertyType'].isin([7, 8])), 'buildYear'] = np.nan
+    print(f"Step 14: Set 'buildYear' to NaN if it is before 1575 or if the property type is 7 or 8. No removals. Remaining: {step9_count}")
+
+    # Step 15: Replace propertyType 11 and 12 with 10
+    filtered_df['propertyType'] = filtered_df['propertyType'].replace([11, 12], 10)
+    print(f"Step 15: Replace propertyType 11 and 12 with 10. No removals. Remaining: {step9_count}")
+    
+    # Step 16: Set municipality to NaN where it is 0 or -1
+    filtered_df.loc[(filtered_df['municipality'].isin([0, -1])), 'municipality'] = np.nan
+    print(f"Step 16: Set municipality to NaN where it is 0 or -1. No removals. Remaining: {step9_count}")
+    
+    # Step 17: Select the original and new variables for machine learning
+    ml_dataset = filtered_df[[
+        'geometry', 'job_density', 'distance_to_nearest_station', 'distance_to_job_center', 'job_count_5km', 
+        'latitude', 'longitude', 'propertyType', 'energyClass', 'priceCash', 'selfsale', 'rooms', 'size', 
+        'lotSize', 'floor', 'buildYear', 'city', 'isForeclosure', 'zipCode', 'area', 'daysForSale', 
+        'net', 'exp', 'basementSize', 'views', 'projectSaleUrl', 'additionalBuildings', 'businessArea', 
+        'nonPremiumDiscrete', 'cleanStreet'
+    ]]
+    final_count = len(ml_dataset)
+    print(f"Step 17: Select variables for machine learning. Final number of listings: {final_count}")
+    
+    # Step 18: Drop rows only if there are missing values in the key columns
+    ml_dataset = ml_dataset.dropna(subset=['latitude', 'longitude', 'priceCash', 'size'])
+    print(f"Step 18: Drop rows with missing key values. Final number of listings: {len(ml_dataset)}")
+
+    return ml_dataset
 
 
 
