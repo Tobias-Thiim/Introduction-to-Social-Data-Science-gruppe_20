@@ -1,0 +1,321 @@
+stationName,stationUrl,stationLatitude,stationLongitude,tags,Station_x,Afgange_x,Station_y,Afgange_y
+Albertslund,http://www.dsb.dk/kundeservice/stationer/albertslund/,55.658108,12.353142,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Albertslund,9.0,Albertslund,9.0
+Alken,http://www.dsb.dk/kundeservice/stationer/alken/,56.0523918,9.8457079,[],Alken,2.0,Alken,2.0
+Allerød,http://www.dsb.dk/kundeservice/stationer/allerod/,55.8706131,12.3568097,['Aflåst cykelparkering'],Allerød,9.0,Allerød,9.0
+Arden,http://www.dsb.dk/kundeservice/stationer/arden/,56.769733,9.859934,[],Arden,2.0,Arden,2.0
+Asnæs,http://www.dsb.dk/kundeservice/stationer/asnas/,55.8099266,11.5032869,[],Asnæs,2.0,Asnæs,2.0
+Aulum,http://www.dsb.dk/kundeservice/stationer/aulum/,56.265253,8.788423,[],Aulum,3.0,Aulum,3.0
+Avedøre,http://www.dsb.dk/kundeservice/stationer/avedore/,55.625400,12.454097,[],Avedøre,10.0,Avedøre,10.0
+Bagsværd,http://www.dsb.dk/kundeservice/stationer/bagsvard/,55.7612225,12.4541519,[],Bagsværd,9.0,Bagsværd,9.0
+Ballerup,http://www.dsb.dk/kundeservice/stationer/ballerup/,55.7296350,12.3589260,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Ballerup,12.0,Ballerup,12.0
+Bedsted Thy,http://www.dsb.dk/kundeservice/stationer/bedsted-thy/,56.806831,8.405832,[],Bedsted Thy,2.0,Bedsted Thy,2.0
+Bernstorffsvej,http://www.dsb.dk/kundeservice/stationer/bernstorffsvej/,55.743001,12.557527,[],Bernstorffsvej,10.0,Bernstorffsvej,10.0
+Birk Centerpark,http://www.dsb.dk/kundeservice/stationer/birk-centerpark/,56.1292882,9.0293258,[],Birk Centerpark,2.0,Birk Centerpark,2.0
+Birkerød,http://www.dsb.dk/kundeservice/stationer/birkerod/,55.840636,12.423690,[],Birkerød,10.0,Birkerød,10.0
+Bispebjerg,http://www.dsb.dk/kundeservice/stationer/bispebjerg/,55.7112395,12.5370691,[],Bispebjerg,19.0,Bispebjerg,19.0
+Bjerringbro,http://www.dsb.dk/kundeservice/stationer/bjerringbro/,56.374731,9.658391,[],Bjerringbro,4.0,Bjerringbro,4.0
+Bording,http://www.dsb.dk/kundeservice/stationer/bording/,56.147004,9.278974,[],Bording,1.0,Bording,1.0
+Borris,http://www.dsb.dk/kundeservice/stationer/borris/,55.958293,8.647713,[],Borris,0.0,Borris,0.0
+Borup,http://www.dsb.dk/kundeservice/stationer/borup-station/,55.494698,11.972512,[],Borup,4.0,Borup,4.0
+Bramming,http://www.dsb.dk/kundeservice/stationer/bramming/,55.4646307,8.7046069,"['Aflåst cykelparkering', 'Stationsstuer']",Bramming,5.0,Bramming,5.0
+Brande,http://www.dsb.dk/kundeservice/stationer/brande/,55.944565,9.129686,['Aflåst cykelparkering'],Brande,2.0,Brande,2.0
+Bred,http://www.dsb.dk/kundeservice/stationer/bred/,55.373909,10.1045529,[],Bred,1.0,Bred,1.0
+Bredebro,http://www.dsb.dk/kundeservice/stationer/bredebro/,55.0568898,8.8234114,[],Bredebro,2.0,Bredebro,2.0
+Brejning,http://www.dsb.dk/kundeservice/stationer/brejning/,55.6662378,9.6605138,[],Brejning,2.0,Brejning,2.0
+Brøndby Strand,http://www.dsb.dk/kundeservice/stationer/brondby-strand/,55.621179,12.422535,[],Brøndby Strand,9.0,Brøndby Strand,9.0
+Brøndbyøster,http://www.dsb.dk/kundeservice/stationer/brondbyoster/,55.6646254,12.4391005,['Aflåst cykelparkering'],Brøndbyøster,9.0,Brøndbyøster,9.0
+Brønderslev,http://www.dsb.dk/kundeservice/stationer/bronderslev/,57.2702909,9.9437398,['Aflåst cykelparkering'],Brønderslev,4.0,Brønderslev,4.0
+Brøns,http://www.dsb.dk/kundeservice/stationer/brons/,55.1944974,8.7409104,[],Brøns,2.0,Brøns,2.0
+Brørup,http://www.dsb.dk/kundeservice/stationer/brorup/,55.4845615,9.0185437,[],Brørup,2.0,Brørup,2.0
+Buddinge,http://www.dsb.dk/kundeservice/stationer/buddinge/,55.747147,12.494284,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Buddinge,10.0,Buddinge,10.0
+Bur,http://www.dsb.dk/kundeservice/stationer/bur/,56.367486,8.427206,[],Bur,1.0,Bur,1.0
+Børkop,http://www.dsb.dk/kundeservice/stationer/borkop/,55.642006,9.65181,[],Børkop,2.0,Børkop,2.0
+Carlsberg,http://www.dsb.dk/kundeservice/stationer/carlsberg/,55.663399,12.536876,[],Carlsberg,20.0,Carlsberg,20.0
+Charlottenlund,http://www.dsb.dk/kundeservice/stationer/charlottenlund/,55.7517533,12.5720023,['Aflåst cykelparkering'],Charlottenlund,10.0,Charlottenlund,10.0
+Danshøj,http://www.dsb.dk/kundeservice/stationer/danshoj/,55.6616585,12.5167753,[],Danshøj,21.0,Danshøj,21.0
+Dianalund,http://www.dsb.dk/kundeservice/stationer/dianalund/,55.5334784,11.4952398,[],Dianalund,2.0,Dianalund,2.0
+Dybbølsbro,http://www.dsb.dk/kundeservice/stationer/dybbolsbro/,55.6645998,12.5529313,['DSB 7-Eleven'],Dybbølsbro,23.0,Dybbølsbro,23.0
+Dyssegård,http://www.dsb.dk/kundeservice/stationer/dyssegard/,55.7319085,12.5361953,[],Dyssegård,9.0,Dyssegård,9.0
+Døstrup Sønderjylland,http://www.dsb.dk/kundeservice/stationer/dostrup-sonderjylland/,55.1169164,8.8039019,[],Døstrup Sønderjylland,2.0,Døstrup Sønderjylland,2.0
+Egedal,http://www.dsb.dk/kundeservice/stationer/egedal/,55.781717,12.1837936,['Aflåst cykelparkering'],Egedal,9.0,Egedal,9.0
+Ejby,http://www.dsb.dk/kundeservice/stationer/ejby/,55.4258007,9.9322647,[],Ejby,2.0,Ejby,2.0
+Emdrup,http://www.dsb.dk/kundeservice/stationer/emdrup/,55.719809,12.541461,[],Emdrup,9.0,Emdrup,9.0
+Engesvang,http://www.dsb.dk/kundeservice/stationer/engesvang/,56.168354,9.35232,[],Engesvang,0.0,Engesvang,0.0
+Esbjerg,http://www.dsb.dk/kundeservice/stationer/esbjerg/,55.468192,8.458251,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Esbjerg,5.0,Esbjerg,5.0
+Eskilstrup,http://www.dsb.dk/kundeservice/stationer/eskilstrup/,54.8542177,11.8852608,[],Eskilstrup,2.0,Eskilstrup,2.0
+Espergærde,http://www.dsb.dk/kundeservice/stationer/espergarde/,55.995292,12.549184,['Aflåst cykelparkering'],Espergærde,6.0,Espergærde,6.0
+Farum,http://www.dsb.dk/kundeservice/stationer/farum/,55.8120599,12.373299,['DSB 7-Eleven'],Farum,5.0,Farum,5.0
+Favrholm,http://www.dsb.dk/kundeservice/stationer/Favrholm/,55.910257969053134,12.315230809298795,['Aflåst cykelparkering'],Favrholm,10.0,Favrholm,10.0
+Faxe Ladeplads,http://www.dsb.dk/kundeservice/stationer/fakse-ladeplads/,55.217099,12.162009,[],Faxe Ladeplads,2.0,Faxe Ladeplads,2.0
+Flintholm,http://www.dsb.dk/kundeservice/stationer/flintholm/,55.685457,12.499963,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Flintholm,21.0,Flintholm,21.0
+Fredensborg,http://www.dsb.dk/kundeservice/stationer/fredensborg/,55.977243,12.4069266,[],Fredensborg,2.0,Fredensborg,2.0
+Fredericia,http://www.dsb.dk/kundeservice/stationer/fredericia/,55.568207,9.740439,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Fredericia,7.0,Fredericia,7.0
+Frederiksberg,http://www.dsb.dk/kundeservice/stationer/frederiksberg/,55.681314,12.534194,[],,,,
+Frederikshavn,http://www.dsb.dk/kundeservice/stationer/frederikshavn/,57.44108,10.539949,[],Frederikshavn,2.0,Frederikshavn,2.0
+Frederikssund,http://www.dsb.dk/kundeservice/stationer/frederikssund/,55.835592,12.062436,['Aflåst cykelparkering'],Frederikssund,5.0,Frederikssund,5.0
+Frederiksværk,http://www.dsb.dk/kundeservice/stationer/frederiksvark/,55.968622,12.0195083,[],Frederiksværk,5.0,Frederiksværk,5.0
+Friheden,http://www.dsb.dk/kundeservice/stationer/friheden/,55.628890,12.482343,['DSB 7-Eleven'],Friheden,9.0,Friheden,9.0
+Fruens Bøge,http://www.dsb.dk/kundeservice/stationer/fruens-boge/,55.369755,10.377829,['Aflåst cykelparkering'],Fruens Bøge,4.0,Fruens Bøge,4.0
+Fuglebakken,http://www.dsb.dk/kundeservice/stationer/fuglebakken/,55.695296,12.527477,[],Fuglebakken,19.0,Fuglebakken,19.0
+Faaborg Rutebilstation,http://www.dsb.dk/kundeservice/stationer/faaborg/,55.093777,10.245588,[],,,,
+Gadstrup,http://www.dsb.dk/kundeservice/stationer/gadstrup/,55.5728106,12.099506,[],Gadstrup,4.0,Gadstrup,4.0
+Gelsted,http://www.dsb.dk/kundeservice/stationer/gelsted/,55.396069,9.974166,[],Gelsted,2.0,Gelsted,2.0
+Gentofte,http://www.dsb.dk/kundeservice/stationer/gentofte/,55.7534336,12.5412786,[],Gentofte,10.0,Gentofte,10.0
+Gilleleje,http://www.dsb.dk/kundeservice/stationer/gilleleje/,56.1236839,12.3034607,[],Gilleleje,2.0,Gilleleje,2.0
+Give,http://www.dsb.dk/kundeservice/stationer/give/,55.843168,9.2360368,[],Give,0.0,Give,0.0
+Gjesing,http://www.dsb.dk/kundeservice/stationer/gjesing/,55.5100982,8.4571333,[],Gjesing,4.0,Gjesing,4.0
+Glostrup,http://www.dsb.dk/kundeservice/stationer/glostrup/,55.663282,12.398726,['DSB 7-Eleven'],Glostrup,9.0,Glostrup,9.0
+Glumsø,http://www.dsb.dk/kundeservice/stationer/glumso/,55.353533,11.695318,[],Glumsø,2.0,Glumsø,2.0
+Gredstedbro,http://www.dsb.dk/kundeservice/stationer/gredstedbro/,55.398888,8.741082,[],Gredstedbro,2.0,Gredstedbro,2.0
+Greve,http://www.dsb.dk/kundeservice/stationer/greve/,55.5815632,12.295749,[],Greve,10.0,Greve,10.0
+Grøndal,http://www.dsb.dk/kundeservice/stationer/grondal/,55.690684,12.515871,[],Grøndal,20.0,Grøndal,20.0
+Gråsten,http://www.dsb.dk/kundeservice/stationer/grasten/,54.918944,9.593766,[],Gråsten,3.0,Gråsten,3.0
+Guldager,http://www.dsb.dk/kundeservice/stationer/guldager/,55.5415671,8.4284722,[],Guldager,3.0,Guldager,3.0
+Gødstrup,http://www.dsb.dk/kundeservice/stationer/godstrup-station/,56.156354,8.896709,[],Gødstrup,3.0,Gødstrup,3.0
+Gørding,http://www.dsb.dk/kundeservice/stationer/gording/,55.4698356,8.8020242,[],Gørding,2.0,Gørding,2.0
+Gårde,http://www.dsb.dk/kundeservice/stationer/garde/,55.765009,8.611287,[],Gårde,3.0,Gårde,3.0
+Hadsten,http://www.dsb.dk/kundeservice/stationer/hadsten/,56.3276035,10.0471631,[],Hadsten,4.0,Hadsten,4.0
+Hammerum,http://www.dsb.dk/kundeservice/stationer/hammerum/,56.1323707,9.0635063,[],Hammerum,2.0,Hammerum,2.0
+Hareskov,http://www.dsb.dk/kundeservice/stationer/hareskov/,55.7660192,12.4059077,[],Hareskov,8.0,Hareskov,8.0
+Haslev,http://www.dsb.dk/kundeservice/stationer/haslev/,55.3294171,11.9611733,"['Aflåst cykelparkering', 'Stationsstuer']",Haslev,2.0,Haslev,2.0
+Havdrup ,http://www.dsb.dk/kundeservice/stationer/havdrup/,55.543455,12.116982,[],,,,
+Hedehusene,http://www.dsb.dk/kundeservice/stationer/hedehusene/,55.6489,12.197485,[],Hedehusene,6.0,Hedehusene,6.0
+Hedensted,http://www.dsb.dk/kundeservice/stationer/hedensted/,55.7683722,9.6986164,[],Hedensted,1.0,Hedensted,1.0
+Hee,http://www.dsb.dk/kundeservice/stationer/hee/,56.1436091,8.2862808,[],Hee,4.0,Hee,4.0
+Hellerup,http://www.dsb.dk/kundeservice/stationer/hellerup/,55.7311155,12.5680862,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Hellerup,6.0,Hellerup,6.0
+Helsinge,http://www.dsb.dk/kundeservice/stationer/helsinge/,56.023029,12.205112,[],Helsinge,2.0,Helsinge,2.0
+Helsingør,http://www.dsb.dk/kundeservice/stationer/helsingor/,56.033549,12.614496,['DSB 7-Eleven'],Helsingør,4.0,Helsingør,4.0
+Herfølge,http://www.dsb.dk/kundeservice/stationer/herfolge/,55.4176264,12.1372593,['Aflåst cykelparkering'],Herfølge,2.0,Herfølge,2.0
+Herlev,http://www.dsb.dk/kundeservice/stationer/herlev/,55.7189020,12.4438120,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Herlev,14.0,Herlev,14.0
+Herning Messecenter,http://www.dsb.dk/kundeservice/stationer/herning-messecenter/,"555643,908","6322569,366",[],Herning Messecenter,3.0,Herning Messecenter,3.0
+Herning,http://www.dsb.dk/kundeservice/stationer/herning/,56.1332194,8.9779755,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Herning,4.0,Herning,4.0
+Hillerød,http://www.dsb.dk/kundeservice/stationer/hillerod/,55.927123,12.3105534,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Hillerød,5.0,Hillerød,5.0
+Hinnerup,http://www.dsb.dk/kundeservice/stationer/hinnerup/,56.263705,10.0592729,[],Hinnerup,2.0,Hinnerup,2.0
+Hjallese,http://www.dsb.dk/kundeservice/stationer/hjallese/,55.3582225,10.3925432,[],Hjallese,3.0,Hjallese,3.0
+Hjerm,http://www.dsb.dk/kundeservice/stationer/hjerm/,56.4383098,8.6402282,[],Hjerm,4.0,Hjerm,4.0
+Hjørring,http://www.dsb.dk/kundeservice/stationer/hjorring/,57.4570501,9.9869405,[],Hjørring,2.0,Hjørring,2.0
+Hjørring Øst,http://www.dsb.dk/kundeservice/stationer/hjorring-ost-station/,57.454827,10.006035,[],Hjørring Øst,3.0,Hjørring Øst,3.0
+Hobro,http://www.dsb.dk/kundeservice/stationer/hobro/,56.6434139,9.7829402,['Aflåst cykelparkering'],Hobro,3.0,Hobro,3.0
+Holbæk,http://www.dsb.dk/kundeservice/stationer/holbak/,55.715806,11.708332,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Holbæk,2.0,Holbæk,2.0
+Holme-Olstrup,http://www.dsb.dk/kundeservice/stationer/holme-olstrup/,55.2598958,11.8553247,[],Holme-Olstrup,4.0,Holme-Olstrup,4.0
+Holmstrup,http://www.dsb.dk/kundeservice/stationer/holmstrup/,55.362961,10.275328,[],Holmstrup,1.0,Holmstrup,1.0
+Holstebro,http://www.dsb.dk/kundeservice/stationer/holstebro/,56.365327,8.620803,"['Aflåst cykelparkering', 'Stationsstuer']",Holstebro,4.0,Holstebro,4.0
+Holsted,http://www.dsb.dk/kundeservice/stationer/holsted/,55.4819582,8.9112624,[],Holsted,2.0,Holsted,2.0
+Holte,http://www.dsb.dk/kundeservice/stationer/holte/,55.8076658,12.4687732,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Holte,14.0,Holte,14.0
+Horsens,http://www.dsb.dk/kundeservice/stationer/horsens/,55.86366,9.8359917,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Horsens,4.0,Horsens,4.0
+Humlebæk,http://www.dsb.dk/kundeservice/stationer/humlebak/,55.963692,12.533384,['Aflåst cykelparkering'],Humlebæk,6.0,Humlebæk,6.0
+Humlum,http://www.dsb.dk/kundeservice/stationer/humlum/,56.540272,8.551149,[],Humlum,4.0,Humlum,4.0
+Hundige,http://www.dsb.dk/kundeservice/stationer/hundige/,55.5977436,12.3323151,['Aflåst cykelparkering'],Hundige,14.0,Hundige,14.0
+Hurup Thy,http://www.dsb.dk/kundeservice/stationer/hurup-thy/,56.751241,8.417765,[],Hurup Thy,2.0,Hurup Thy,2.0
+Husum,http://www.dsb.dk/kundeservice/stationer/husum/,55.7071732,12.4915226,[],Husum,13.0,Husum,13.0
+Hvalsø,http://www.dsb.dk/kundeservice/stationer/hvalso/,55.5954797,11.8598818,[],Hvalsø,2.0,Hvalsø,2.0
+Hvidbjerg,http://www.dsb.dk/kundeservice/stationer/hvidbjerg/,56.6500067,8.5263903,[],Hvidbjerg,2.0,Hvidbjerg,2.0
+Hviding,http://www.dsb.dk/kundeservice/stationer/hviding/,55.2832,8.726482,[],Hviding,2.0,Hviding,2.0
+Hvidovre,http://www.dsb.dk/kundeservice/stationer/hvidovre/,55.664521,12.472896,[],Hvidovre,9.0,Hvidovre,9.0
+Højby (Fyn),http://www.dsb.dk/kundeservice/stationer/hojby-fyn-station/,55.33019639781542,10.434292521794651,[],Højby (Fyn),1.0,Højby (Fyn),1.0
+Højby Sjælland,http://www.dsb.dk/kundeservice/stationer/hojby-sjalland/,55.9109599,11.6039889,[],,,,
+Høje Taastrup,http://www.dsb.dk/kundeservice/stationer/hoje-taastrup/,55.6483771,12.269294,['DSB 7-Eleven'],Høje Taastrup,12.0,Høje Taastrup,12.0
+Højslev,http://www.dsb.dk/kundeservice/stationer/hojslev/,56.5378176,9.1010286,[],Højslev,0.0,Højslev,0.0
+Høng,http://www.dsb.dk/kundeservice/stationer/hong/,55.5068929,11.2860834,[],Høng,2.0,Høng,2.0
+Hørdum,http://www.dsb.dk/kundeservice/stationer/hordum/,56.84944,8.492797,[],Hørdum,2.0,Hørdum,2.0
+Hørning,http://www.dsb.dk/kundeservice/stationer/horning/,56.0818079,10.0383594,[],Hørning,1.0,Hørning,1.0
+Hårlev,http://www.dsb.dk/kundeservice/stationer/harlev/,55.350258,12.226743,[],Hårlev,3.0,Hårlev,3.0
+Ikast,http://www.dsb.dk/kundeservice/stationer/ikast/,56.1442171,9.1595924,[],Ikast,3.0,Ikast,3.0
+Ishøj,http://www.dsb.dk/kundeservice/stationer/ishoj/,55.613972,12.34637,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Ishøj,20.0,Ishøj,20.0
+Islev,http://www.dsb.dk/kundeservice/stationer/islev/,55.699441,12.469165,['Aflåst cykelparkering'],Islev,4.0,Islev,4.0
+Jelling,http://www.dsb.dk/kundeservice/stationer/jelling/,55.754186,9.420085,[],Jelling,2.0,Jelling,2.0
+Jerne,http://www.dsb.dk/kundeservice/stationer/jerne-station/,55.47454222349097,8.48583062698492,[],Jerne,3.0,Jerne,3.0
+Jersie,http://www.dsb.dk/kundeservice/stationer/jersie/,55.52071907659139,12.208628626780635,['Aflåst cykelparkering'],Jersie,8.0,Jersie,8.0
+Jyderup,http://www.dsb.dk/kundeservice/stationer/jyderup/,55.6601646,11.3981643,['Aflåst cykelparkering'],Jyderup,2.0,Jyderup,2.0
+Jyllingevej,http://www.dsb.dk/kundeservice/stationer/jyllingevej/,55.690576,12.477420,['Aflåst cykelparkering'],Jyllingevej,4.0,Jyllingevej,4.0
+Jægersborg,http://www.dsb.dk/kundeservice/stationer/jagersborg/,55.761621,12.521561,[],Jægersborg,9.0,Jægersborg,9.0
+Kalundborg,http://www.dsb.dk/kundeservice/stationer/kalundborg/,55.6777263,11.0888449,['Aflåst cykelparkering'],Kalundborg,1.0,Kalundborg,1.0
+Kalundborg Øst,http://www.dsb.dk/kundeservice/stationer/kalundborg-ost-station/,55.6765781,11.118693,[],Kalundborg Øst,2.0,Kalundborg Øst,2.0
+Karlslunde,http://www.dsb.dk/kundeservice/stationer/karlslunde/,55.56631443959039,12.268786724462743,['Aflåst cykelparkering'],Karlslunde,10.0,Karlslunde,10.0
+Kauslunde,http://www.dsb.dk/kundeservice/stationer/kauslunde/,55.497204,9.747172,[],Kauslunde,2.0,Kauslunde,2.0
+KB Hallen,http://www.dsb.dk/kundeservice/stationer/kb-hallen/,55.677879,12.492953,[],KB Hallen,18.0,KB Hallen,18.0
+Kerteminde,http://www.dsb.dk/kundeservice/stationer/kerteminde/,55.4507277,10.6591745,[],,,,
+Kibæk,http://www.dsb.dk/kundeservice/stationer/kibak/,56.0324693,8.8521553,[],Kibæk,2.0,Kibæk,2.0
+Kildebakke,http://www.dsb.dk/kundeservice/stationer/kildebakke/,55.744263,12.5054453,[],Kildebakke,10.0,Kildebakke,10.0
+Kildedal,http://www.dsb.dk/kundeservice/stationer/kildedal/,55.768616,12.19831,[],Kildedal,4.0,Kildedal,4.0
+Klampenborg,http://www.dsb.dk/kundeservice/stationer/klampenborg/,55.777515,12.587365,[],Klampenborg,5.0,Klampenborg,5.0
+Kliplev,http://www.dsb.dk/kundeservice/stationer/kliplev/,54.935225,9.398478,[],Kliplev,2.0,Kliplev,2.0
+Knabstrup,http://www.dsb.dk/kundeservice/stationer/knabstrup/,55.664414,11.552356,[],Knabstrup,1.0,Knabstrup,1.0
+Kokkedal,http://www.dsb.dk/kundeservice/stationer/kokkedal/,55.903521,12.501976,['DSB 7-Eleven'],Kokkedal,4.0,Kokkedal,4.0
+Kolding,http://www.dsb.dk/kundeservice/stationer/kolding/,55.4908177,9.4810916,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Kolding,5.0,Kolding,5.0
+Korsør,http://www.dsb.dk/kundeservice/stationer/korsor/,55.356847,11.135303,['Aflåst cykelparkering'],Korsør,2.0,Korsør,2.0
+Kvissel,http://www.dsb.dk/kundeservice/stationer/kvissel/,57.470564,10.409108,[],Kvissel,2.0,Kvissel,2.0
+Kværndrup,http://www.dsb.dk/kundeservice/stationer/kvarndrup/,55.177823,10.519303,[],Kværndrup,1.0,Kværndrup,1.0
+København H,http://www.dsb.dk/kundeservice/stationer/kobenhavn-h/,55.673535,12.564968,"['DSB Salg & Service', 'DSB 7-Eleven', 'Salg af udlandsbilletter']",København H,16.0,København H,16.0
+København Syd,http://www.dsb.dk/kundeservice/stationer/ny-ellebjerg/,55.6616585,12.5167753,[],København Syd,2.0,København Syd,2.0
+CPH Lufthavn ✈︎,http://www.dsb.dk/kundeservice/stationer/kobenhavns-lufthavn-kastrup/,55.6297067,12.6445148,['Servicecenter'],CPH Lufthavn ✈︎,7.0,CPH Lufthavn ✈︎,7.0
+Køge Nord,http://www.dsb.dk/kundeservice/stationer/koge-nord/,55.4990911,12.1733631,[],Køge Nord,3.0,Køge Nord,3.0
+Køge,http://www.dsb.dk/kundeservice/stationer/koge/,55.458193,12.186403,['DSB 7-Eleven'],Køge,6.0,Køge,6.0
+Langeskov,http://www.dsb.dk/kundeservice/stationer/langeskov/,55.361017,10.592987,[],Langeskov,1.0,Langeskov,1.0
+Langgade,http://www.dsb.dk/kundeservice/stationer/langgade/,55.6616585,12.5167753,[],Langgade,6.0,Langgade,6.0
+Langå,http://www.dsb.dk/kundeservice/stationer/langa/,56.386539,9.896355,[],Langå,3.0,Langå,3.0
+Laven,http://www.dsb.dk/kundeservice/stationer/laven/,56.125564,9.717392,[],Laven,2.0,Laven,2.0
+Lejre,http://www.dsb.dk/kundeservice/stationer/lejre/,55.604654,11.9713967,[],Lejre,2.0,Lejre,2.0
+Lem,http://www.dsb.dk/kundeservice/stationer/lem/,56.0245372,8.3858152,[],Lem,2.0,Lem,2.0
+Lemvig,http://www.dsb.dk/kundeservice/stationer/lemvig/,56.5468216,8.3000436,[],Lemvig,1.0,Lemvig,1.0
+Lille Skensved,http://www.dsb.dk/kundeservice/stationer/lille-skensved/,55.5113884,12.1402936,[],Lille Skensved,2.0,Lille Skensved,2.0
+Lindholm,http://www.dsb.dk/kundeservice/stationer/lindholm/,57.0668499,9.9031465,[],Lindholm,2.0,Lindholm,2.0
+Lundby,http://www.dsb.dk/kundeservice/stationer/lundby/,55.11039,11.86975,[],Lundby,0.0,Lundby,0.0
+Lunderskov,http://www.dsb.dk/kundeservice/stationer/lunderskov/,55.479968,9.303307,[],Lunderskov,4.0,Lunderskov,4.0
+Lyngby,http://www.dsb.dk/kundeservice/stationer/lyngby/,55.76869,12.5027977,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Lyngby,18.0,Lyngby,18.0
+Lyngs,http://www.dsb.dk/kundeservice/stationer/lyngs/,56.664365,8.451203,[],Lyngs,2.0,Lyngs,2.0
+Malmparken,http://www.dsb.dk/kundeservice/stationer/malmparken/,55.7255070,12.3851610,['Aflåst cykelparkering'],Malmparken,15.0,Malmparken,15.0
+Maribo,http://www.dsb.dk/kundeservice/stationer/maribo/,54.7766639,11.5014832,[],Maribo,2.0,Maribo,2.0
+Middelfart,http://www.dsb.dk/kundeservice/stationer/middelfart/,55.5024995,9.734394,['Aflåst cykelparkering'],Middelfart,2.0,Middelfart,2.0
+Mørkøv,http://www.dsb.dk/kundeservice/stationer/morkov/,55.6543852,11.5019509,[],Mørkøv,2.0,Mørkøv,2.0
+Måløv,http://www.dsb.dk/kundeservice/stationer/malov/,55.7474510,12.3184090,['Aflåst cykelparkering'],Måløv,9.0,Måløv,9.0
+Nakskov,http://www.dsb.dk/kundeservice/stationer/nakskov/,54.8332131,11.1384397,[],Nakskov,1.0,Nakskov,1.0
+Nivå station,http://www.dsb.dk/kundeservice/stationer/niva/,55.933331,12.506574,[],,,,
+Nordhavn,http://www.dsb.dk/kundeservice/stationer/nordhavn/,55.704639,12.590981,['DSB 7-Eleven'],Nordhavn,22.0,Nordhavn,22.0
+Nyborg,http://www.dsb.dk/kundeservice/stationer/nyborg/,55.3139201,10.8026183,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Nyborg,4.0,Nyborg,4.0
+Nykøbing F,http://www.dsb.dk/kundeservice/stationer/nykobing-f/,54.767115,11.877615,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Nykøbing F,3.0,Nykøbing F,3.0
+Nykøbing Mors,http://www.dsb.dk/kundeservice/stationer/nykobing-mors/,56.7946266,8.8633832,[],,,,
+Nykøbing Sj,http://www.dsb.dk/kundeservice/stationer/nykobing-sj/,55.921588,11.672552,[],,,,
+Nærum,http://www.dsb.dk/kundeservice/stationer/narum/,55.8141459,12.5280471,[],Nærum,1.0,Nærum,1.0
+Næstved Nord,http://www.dsb.dk/kundeservice/stationer/nastved-nord/,55.248036,11.783641,[],Næstved Nord,4.0,Næstved Nord,4.0
+Næstved,http://www.dsb.dk/kundeservice/stationer/nastved/,55.231172,11.767016,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Næstved,3.0,Næstved,3.0
+Nørre Alslev,http://www.dsb.dk/kundeservice/stationer/norre-alslev/,54.896912,11.8855039,['Aflåst cykelparkering'],Nørre Alslev,1.0,Nørre Alslev,1.0
+Nørre Aaby,http://www.dsb.dk/kundeservice/stationer/norre-aby/,55.4601566,9.8701213,[],Nørre Aaby,1.0,Nørre Aaby,1.0
+Nørrebro,http://www.dsb.dk/kundeservice/stationer/norrebro/,55.700712,12.5385325,['DSB 7-Eleven'],Nørrebro,19.0,Nørrebro,19.0
+Nørreport,http://www.dsb.dk/kundeservice/stationer/norreport/,55.682844,12.570983,['DSB 7-Eleven'],Nørreport,14.0,Nørreport,14.0
+Oddesund Nord,http://www.dsb.dk/kundeservice/stationer/oddesund-nord/,56.58248,8.54691,[],Oddesund Nord,2.0,Oddesund Nord,2.0
+Odense,http://www.dsb.dk/kundeservice/stationer/odense/,55.4011689,10.3878007,"['DSB Salg & Service', 'DSB 7-Eleven', 'Salg af udlandsbilletter']",Odense,4.0,Odense,4.0
+Odense Sygehus,http://www.dsb.dk/kundeservice/stationer/odense-sygehus/,55.381672,10.367511,[],Odense Sygehus,2.0,Odense Sygehus,2.0
+Oksbøl,http://www.dsb.dk/kundeservice/stationer/oksbol/,55.625893,8.283451,[],Oksbøl,0.0,Oksbøl,0.0
+Ordrup,http://www.dsb.dk/kundeservice/stationer/ordrup/,55.7628929,12.582809,[],Ordrup,8.0,Ordrup,8.0
+Padborg,http://www.dsb.dk/kundeservice/stationer/padborg/,54.824543,9.35914,[],Padborg,2.0,Padborg,2.0
+Pederstrup,http://www.dsb.dk/kundeservice/stationer/pederstrup/,55.283788,10.487182,[],Pederstrup,1.0,Pederstrup,1.0
+Peter Bangs Vej,http://www.dsb.dk/kundeservice/stationer/peter-bangs-vej/,55.681845,12.5179439,[],Peter Bangs Vej,4.0,Peter Bangs Vej,4.0
+Randers,http://www.dsb.dk/kundeservice/stationer/randers/,56.462011,10.021974,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Randers,2.0,Randers,2.0
+Regstrup,http://www.dsb.dk/kundeservice/stationer/regstrup/,55.677551,11.61264,[],Regstrup,0.0,Regstrup,0.0
+Rejsby,http://www.dsb.dk/kundeservice/stationer/rejsby/,55.2282256,8.7546142,[],Rejsby,2.0,Rejsby,2.0
+Ribe Nørremark,http://www.dsb.dk/kundeservice/stationer/ribe-norremark/,55.339898,8.776071,[],Ribe Nørremark,3.0,Ribe Nørremark,3.0
+Ribe,http://www.dsb.dk/kundeservice/stationer/ribe/,55.327612,8.769993,[],Ribe,2.0,Ribe,2.0
+Ringe,http://www.dsb.dk/kundeservice/stationer/ringe/,55.23914,10.481502,[],Ringe,1.0,Ringe,1.0
+Ringkøbing,http://www.dsb.dk/kundeservice/stationer/ringkobing/,56.0927227,8.2496657,[],Ringkøbing,4.0,Ringkøbing,4.0
+Ringsted,http://www.dsb.dk/kundeservice/stationer/ringsted/,55.438398,11.786487,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Ringsted,8.0,Ringsted,8.0
+Roskilde,http://www.dsb.dk/kundeservice/stationer/roskilde/,55.6393524,12.0886358,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Roskilde,10.0,Roskilde,10.0
+Rudkøbing,http://www.dsb.dk/kundeservice/stationer/rudkobing/,54.9386142,10.7224375,[],,,,
+Rudme,http://www.dsb.dk/kundeservice/stationer/rudme/,55.198525,10.485706,[],Rudme,1.0,Rudme,1.0
+Rungsted Kyst,http://www.dsb.dk/kundeservice/stationer/rungsted-kyst/,55.882138,12.531274,['Stationsstuer'],Rungsted Kyst,4.0,Rungsted Kyst,4.0
+Ry,http://www.dsb.dk/kundeservice/stationer/ry/,56.091265,9.758447,[],Ry,2.0,Ry,2.0
+Ryparken,http://www.dsb.dk/kundeservice/stationer/ryparken/,55.7153125,12.5591283,[],Ryparken,20.0,Ryparken,20.0
+Rødekro,http://www.dsb.dk/kundeservice/stationer/rodekro/,55.069373,9.333345,['Aflåst cykelparkering'],Rødekro,0.0,Rødekro,0.0
+Rødkærsbro,http://www.dsb.dk/kundeservice/stationer/rodkarsbro/,56.353233,9.498689,[],Rødkærsbro,2.0,Rødkærsbro,2.0
+Rødovre,http://www.dsb.dk/kundeservice/stationer/rodovre/,55.6654924,12.4572267,['DSB 7-Eleven'],Rødovre,10.0,Rødovre,10.0
+Rødvig,http://www.dsb.dk/kundeservice/stationer/rodvig/,55.25483,12.378729,[],Rødvig,1.0,Rødvig,1.0
+Sakskøbing,http://www.dsb.dk/kundeservice/stationer/sakskobing/,54.7967984,11.6360902,[],Sakskøbing,2.0,Sakskøbing,2.0
+Sejstrup,http://www.dsb.dk/kundeservice/stationer/sejstrup/,55.4352608,8.7322198,[],Sejstrup,2.0,Sejstrup,2.0
+Sig,http://www.dsb.dk/kundeservice/stationer/sig/,55.665822,8.576915,[],Sig,2.0,Sig,2.0
+Silkeborg,http://www.dsb.dk/kundeservice/stationer/silkeborg/,56.1643313,9.5441085,['DSB 7-Eleven'],Silkeborg,2.0,Silkeborg,2.0
+Sindal,http://www.dsb.dk/kundeservice/stationer/sindal/,57.4702479,10.2025279,[],Sindal,2.0,Sindal,2.0
+Sjælør,http://www.dsb.dk/kundeservice/stationer/sjalor/,55.6616585,12.5167753,['DSB 7-Eleven'],Sjælør,19.0,Sjælør,19.0
+Sjørring,http://www.dsb.dk/kundeservice/stationer/sjorring/,56.951561,8.587611,[],Sjørring,2.0,Sjørring,2.0
+Skagen,http://www.dsb.dk/kundeservice/stationer/skagen/,57.7239045,10.5921131,[],Skagen,1.0,Skagen,1.0
+Skalbjerg,http://www.dsb.dk/kundeservice/stationer/skalbjerg/,55.367748,10.150057,[],Skalbjerg,1.0,Skalbjerg,1.0
+Skalborg,http://www.dsb.dk/kundeservice/stationer/skalborg/,57.0077294,9.8955058,[],Skalborg,1.0,Skalborg,1.0
+Skanderborg,http://www.dsb.dk/kundeservice/stationer/skanderborg/,56.04338,9.924918,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Skanderborg,4.0,Skanderborg,4.0
+Skive,http://www.dsb.dk/kundeservice/stationer/skive/,56.56169,9.02601,[],Skive,0.0,Skive,0.0
+Skjern,http://www.dsb.dk/kundeservice/stationer/skjern/,55.947406,8.49206,[],Skjern,1.0,Skjern,1.0
+Skodsborg,http://www.dsb.dk/kundeservice/stationer/skodsborg/,55.8234507,12.571099,[],Skodsborg,4.0,Skodsborg,4.0
+Skovbrynet,http://www.dsb.dk/kundeservice/stationer/skovbrynet/,55.764648,12.433047,[],Skovbrynet,9.0,Skovbrynet,9.0
+Skovlunde,http://www.dsb.dk/kundeservice/stationer/skovlunde/,55.7227420,12.4035120,[],Skovlunde,15.0,Skovlunde,15.0
+Skærbæk,http://www.dsb.dk/kundeservice/stationer/skarbak/,55.1595392,8.7702044,[],Skærbæk,2.0,Skærbæk,2.0
+Skørping,http://www.dsb.dk/kundeservice/stationer/skorping/,56.8358368,9.887984,[],Skørping,2.0,Skørping,2.0
+Slagelse,http://www.dsb.dk/kundeservice/stationer/slagelse/,55.4071076,11.3470879,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Slagelse,3.0,Slagelse,3.0
+Snedsted,http://www.dsb.dk/kundeservice/stationer/snedsted/,56.892597,8.527268,[],Snedsted,2.0,Snedsted,2.0
+Snekkersten,http://www.dsb.dk/kundeservice/stationer/snekkersten/,56.0096899,12.5776791,['Aflåst cykelparkering'],Snekkersten,5.0,Snekkersten,5.0
+Solrød Strand,http://www.dsb.dk/kundeservice/stationer/solrod-strand/,55.5328097,12.2168716,['Aflåst cykelparkering'],Solrød Strand,9.0,Solrød Strand,9.0
+Sorgenfri,http://www.dsb.dk/kundeservice/stationer/sorgenfri/,55.781235,12.483457,[],Sorgenfri,10.0,Sorgenfri,10.0
+Sorø,http://www.dsb.dk/kundeservice/stationer/soro/,55.4194091,11.5683884,['Aflåst cykelparkering'],Sorø,2.0,Sorø,2.0
+Spangsbjerg,http://www.dsb.dk/kundeservice/stationer/spangsbjerg/,55.49696,8.4460234,[],Spangsbjerg,2.0,Spangsbjerg,2.0
+Sparkær,http://www.dsb.dk/kundeservice/stationer/sparkaer-station/,56.475140,9.227554,[],Sparkær,1.0,Sparkær,1.0
+Stengården,http://www.dsb.dk/kundeservice/stationer/stengarden/,55.756183,12.47014,[],Stengården,9.0,Stengården,9.0
+Stenløse,http://www.dsb.dk/kundeservice/stationer/stenlose/,55.7664410,12.1906350,['Aflåst cykelparkering'],Stenløse,9.0,Stenløse,9.0
+Stenstrup,http://www.dsb.dk/kundeservice/stationer/stenstrup/,55.131794,10.508943,[],Stenstrup,2.0,Stenstrup,2.0
+Stenstrup Syd,http://www.dsb.dk/kundeservice/stationer/stenstrup-syd/,55.120436,10.5153199,[],Stenstrup Syd,1.0,Stenstrup Syd,1.0
+Stoholm,http://www.dsb.dk/kundeservice/stationer/stoholm/,56.4871582,9.1505299,[],Stoholm,0.0,Stoholm,0.0
+Store Heddinge,http://www.dsb.dk/kundeservice/stationer/store-heddinge/,55.310036,12.385932,[],Store Heddinge,2.0,Store Heddinge,2.0
+Struer,http://www.dsb.dk/kundeservice/stationer/struer/,56.4913769,8.601728,['Aflåst cykelparkering'],Struer,3.0,Struer,3.0
+Studsgård,http://www.dsb.dk/kundeservice/stationer/studsgard/,56.090547,8.908508,[],Studsgård,2.0,Studsgård,2.0
+Støvring,http://www.dsb.dk/kundeservice/stationer/stovring/,56.8881242,9.8300454,[],Støvring,1.0,Støvring,1.0
+Svanemøllen,http://www.dsb.dk/kundeservice/stationer/svanemollen/,55.715537,12.57806,['DSB 7-Eleven'],Svanemøllen,22.0,Svanemøllen,22.0
+Svebølle,http://www.dsb.dk/kundeservice/stationer/svebolle/,55.6522736,11.2916186,[],Svebølle,2.0,Svebølle,2.0
+Svejbæk,http://www.dsb.dk/kundeservice/stationer/svejbak/,56.134052,9.631061,[],Svejbæk,3.0,Svejbæk,3.0
+Svendborg,http://www.dsb.dk/kundeservice/stationer/svendborg/,55.0597392,10.6120497,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Svendborg,1.0,Svendborg,1.0
+Svendborg Vest,http://www.dsb.dk/kundeservice/stationer/svendborg-vest/,55.0549386,10.5817058,['Aflåst cykelparkering'],Svendborg Vest,2.0,Svendborg Vest,2.0
+Svenstrup,http://www.dsb.dk/kundeservice/stationer/svenstrup/,56.9647504,9.8587753,[],Svenstrup,2.0,Svenstrup,2.0
+Sydhavn,http://www.dsb.dk/kundeservice/stationer/sydhavn/,55.6547907,12.5372263,[],Sydhavn,20.0,Sydhavn,20.0
+Søllested,http://www.dsb.dk/kundeservice/stationer/sollested/,54.8110012,11.270193,[],Søllested,2.0,Søllested,2.0
+Sønderborg,http://www.dsb.dk/kundeservice/stationer/sonderborg/,54.9130458,9.7789006,[],Sønderborg,1.0,Sønderborg,1.0
+Tarm,http://www.dsb.dk/kundeservice/stationer/tarm/,55.907348,8.520656,[],Tarm,1.0,Tarm,1.0
+Taulov,http://www.dsb.dk/kundeservice/stationer/taulov/,55.538146,9.610191,[],Taulov,0.0,Taulov,0.0
+Thisted,http://www.dsb.dk/kundeservice/stationer/thisted/,56.9528071,8.6878141,[],Thisted,1.0,Thisted,1.0
+Thyregod,http://www.dsb.dk/kundeservice/stationer/thyregod/,55.908670,9.252550,[],Thyregod,0.0,Thyregod,0.0
+Tim,http://www.dsb.dk/kundeservice/stationer/tim/,56.1950909,8.3052776,[],Tim,3.0,Tim,3.0
+Tinglev,http://www.dsb.dk/kundeservice/stationer/tinglev/,54.936387,9.2579499,[],Tinglev,1.0,Tinglev,1.0
+Tistrup,http://www.dsb.dk/kundeservice/stationer/tistrup/,55.716482,8.598318,[],Tistrup,2.0,Tistrup,2.0
+Tjæreborg,http://www.dsb.dk/kundeservice/stationer/tjareborg/,55.466376,8.579307,[],Tjæreborg,2.0,Tjæreborg,2.0
+Tolne,http://www.dsb.dk/kundeservice/stationer/tolne/,57.484873,10.309144,[],Tolne,2.0,Tolne,2.0
+Tommerup,http://www.dsb.dk/kundeservice/stationer/tommerup/,55.349473,10.182207,[],Tommerup,2.0,Tommerup,2.0
+Trekroner,http://www.dsb.dk/kundeservice/stationer/trekroner/,55.64797,12.132059,[],Trekroner,5.0,Trekroner,5.0
+Troldhede,http://www.dsb.dk/kundeservice/stationer/troldhede/,55.993205,8.741793,[],Troldhede,1.0,Troldhede,1.0
+Tureby,http://www.dsb.dk/kundeservice/stationer/tureby/,55.373235,12.076024,[],Tureby,2.0,Tureby,2.0
+Tølløse,http://www.dsb.dk/kundeservice/stationer/tollose/,55.612004,11.7727635,[],Tølløse,2.0,Tølløse,2.0
+Tønder Nord,http://www.dsb.dk/kundeservice/stationer/tonder-nord/,54.938655,8.871057,[],Tønder Nord,0.0,Tønder Nord,0.0
+Tønder,http://www.dsb.dk/kundeservice/stationer/tonder/,54.9332723,8.8609985,[],Tønder,0.0,Tønder,0.0
+Tårnby,http://www.dsb.dk/kundeservice/stationer/tarnby/,55.629865,12.601964,[],Tårnby,5.0,Tårnby,5.0
+Taastrup,http://www.dsb.dk/kundeservice/stationer/taastrup/,55.65252,12.302071,[],Taastrup,9.0,Taastrup,9.0
+Uglev,http://www.dsb.dk/kundeservice/stationer/uglev/,56.6103719,8.5356705,[],Uglev,2.0,Uglev,2.0
+Ulfborg,http://www.dsb.dk/kundeservice/stationer/ulfborg/,56.2720889,8.3210799,[],Ulfborg,3.0,Ulfborg,3.0
+Ulstrup,http://www.dsb.dk/kundeservice/stationer/ulstrup/,56.39633,9.7661145,[],Ulstrup,2.0,Ulstrup,2.0
+Valby,http://www.dsb.dk/kundeservice/stationer/valby/,55.66404,12.51437,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Valby,2.0,Valby,2.0
+Vallensbæk,http://www.dsb.dk/kundeservice/stationer/vallensbak/,55.6225222,12.3881703,[],Vallensbæk,10.0,Vallensbæk,10.0
+Vamdrup,http://www.dsb.dk/kundeservice/stationer/vamdrup/,55.428126,9.2863019,[],Vamdrup,1.0,Vamdrup,1.0
+Vangede,http://www.dsb.dk/kundeservice/stationer/vangede/,55.739449,12.5235749,[],Vangede,9.0,Vangede,9.0
+Vanløse,http://www.dsb.dk/kundeservice/stationer/vanlose/,55.6873303,12.4902537,['DSB 7-Eleven'],Vanløse,14.0,Vanløse,14.0
+Varde Kaserne,http://www.dsb.dk/kundeservice/stationer/varde-kaserne/,55.6101509,8.4682942,[],Varde Kaserne,1.0,Varde Kaserne,1.0
+Varde Nord,http://www.dsb.dk/kundeservice/stationer/varde-nord/,55.6315612,8.5001886,[],Varde Nord,2.0,Varde Nord,2.0
+Varde,http://www.dsb.dk/kundeservice/stationer/varde/,55.61609,8.4842378,[],Varde,1.0,Varde,1.0
+Vedbæk,http://www.dsb.dk/kundeservice/stationer/vedbak/,55.85308,12.563755,[],Vedbæk,4.0,Vedbæk,4.0
+Vejen,http://www.dsb.dk/kundeservice/stationer/vejen/,55.475955,9.136212,['Aflåst cykelparkering'],Vejen,2.0,Vejen,2.0
+Vejle,http://www.dsb.dk/kundeservice/stationer/vejle/,55.706667,9.536509,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Vejle,4.0,Vejle,4.0
+Vejle Sygehus,http://www.dsb.dk/kundeservice/stationer/vejle-sygehus/,55.716689,9.535723,[],Vejle Sygehus,1.0,Vejle Sygehus,1.0
+Veksø,http://www.dsb.dk/kundeservice/stationer/vekso/,55.7501080,12.2384370,[],Veksø,9.0,Veksø,9.0
+Vemb,http://www.dsb.dk/kundeservice/stationer/vemb/,56.3436657,8.3449687,[],Vemb,0.0,Vemb,0.0
+Vesterport,http://www.dsb.dk/kundeservice/stationer/vesterport/,55.6752617,12.5616659,['DSB 7-Eleven'],Vesterport,22.0,Vesterport,22.0
+Viborg,http://www.dsb.dk/kundeservice/stationer/viborg/,56.4474266,9.3985282,[],Viborg,2.0,Viborg,2.0
+Viby Jylland,http://www.dsb.dk/kundeservice/stationer/viby-j/,56.1214599,10.1598898,[],,,,
+Viby Sj,http://www.dsb.dk/kundeservice/stationer/viby-sjalland/,55.549563,12.024346,['Aflåst cykelparkering'],Viby Sj,1.0,Viby Sj,1.0
+Vigerslev Allé,http://www.dsb.dk/kundeservice/stationer/vigerslev-alle/,55.6616585,12.5167753,[],Vigerslev Allé,18.0,Vigerslev Allé,18.0
+Vildbjerg,http://www.dsb.dk/kundeservice/stationer/vildbjerg/,56.1975185,8.7682731,[],Vildbjerg,2.0,Vildbjerg,2.0
+Vinderup,http://www.dsb.dk/kundeservice/stationer/vinderup/,56.4826931,8.7817763,[],Vinderup,1.0,Vinderup,1.0
+Vinge,http://www.dsb.dk/kundeservice/stationer/vinge-station/,55.81042111629197,12.115174036977587,[],Vinge,4.0,Vinge,4.0
+Vipperød,http://www.dsb.dk/kundeservice/stationer/vipperod/,55.666936,11.738558,[],Vipperød,2.0,Vipperød,2.0
+Virum,http://www.dsb.dk/kundeservice/stationer/virum/,55.7957035,12.4733973,[],Virum,10.0,Virum,10.0
+Visby,http://www.dsb.dk/kundeservice/stationer/visby/,55.009799,8.781598,[],Visby,1.0,Visby,1.0
+Vojens,http://www.dsb.dk/kundeservice/stationer/vojens/,55.248379,9.30541,['Aflåst cykelparkering'],Vojens,0.0,Vojens,0.0
+Vordingborg,http://www.dsb.dk/kundeservice/stationer/vordingborg/,55.0126278,11.9001298,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Vordingborg,0.0,Vordingborg,0.0
+Vrå,http://www.dsb.dk/kundeservice/stationer/vra/,57.354598,9.942258,[],Vrå,1.0,Vrå,1.0
+Værløse,http://www.dsb.dk/kundeservice/stationer/varlose/,55.782377,12.373646,[],Værløse,10.0,Værløse,10.0
+Ydby,http://www.dsb.dk/kundeservice/stationer/ydby/,56.709078,8.410997,[],Ydby,2.0,Ydby,2.0
+Ærøskøbing,http://www.dsb.dk/kundeservice/stationer/aroskobing/,54.890994,10.411701,[],,,,
+Ølby,http://www.dsb.dk/kundeservice/stationer/olby/,55.479756,12.175412,['Aflåst cykelparkering'],Ølby,4.0,Ølby,4.0
+Ølgod,http://www.dsb.dk/kundeservice/stationer/olgod/,55.806432,8.620191,[],Ølgod,1.0,Ølgod,1.0
+Ølstykke,http://www.dsb.dk/kundeservice/stationer/olstykke/,55.793643,12.147581,['Aflåst cykelparkering'],Ølstykke,10.0,Ølstykke,10.0
+Ørestad,http://www.dsb.dk/kundeservice/stationer/orestad/,55.6285026,12.5789466,[],Ørestad,3.0,Ørestad,3.0
+Østerport,http://www.dsb.dk/kundeservice/stationer/osterport/,55.692512,12.587209,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Østerport,5.0,Østerport,5.0
+Aabenraa Rutebilstation,http://www.dsb.dk/kundeservice/stationer/aabenraa-rutebilstation/,55.0451947,9.4228236,[],,,,
+Aalborg Lufthavn ✈︎,http://www.dsb.dk/kundeservice/stationer/aalborg-lufthavn-station/,57.091058,9.879210,[],Aalborg Lufthavn ✈︎,0.0,Aalborg Lufthavn ✈︎,0.0
+Aalborg,http://www.dsb.dk/kundeservice/stationer/aalborg/,57.042889,9.917195,"['DSB 7-Eleven', 'Aflåst cykelparkering']",Aalborg,1.0,Aalborg,1.0
+Aalborg Vestby,http://www.dsb.dk/kundeservice/stationer/aalborg-vestby/,57.052771,9.9150191,[],Aalborg Vestby,0.0,Aalborg Vestby,0.0
+Ålholm,http://www.dsb.dk/kundeservice/stationer/alholm/,55.672309,12.493092,['Aflåst cykelparkering'],Ålholm,19.0,Ålholm,19.0
+Åmarken,http://www.dsb.dk/kundeservice/stationer/amarken/,55.640121,12.499651,['Aflåst cykelparkering'],Åmarken,10.0,Åmarken,10.0
+Aarhus H,http://www.dsb.dk/kundeservice/stationer/aarhus-h/,56.150272,10.204473,"['DSB Salg & Service', 'DSB 7-Eleven', 'Salg af udlandsbilletter']",Aarhus H,2.0,Aarhus H,2.0
+Årslev,http://www.dsb.dk/kundeservice/stationer/arslev/,55.3025617,10.4643343,[],Årslev,1.0,Årslev,1.0
+Aarup,http://www.dsb.dk/kundeservice/stationer/aarup/,55.3828991,10.0511112,['Aflåst cykelparkering'],Aarup,2.0,Aarup,2.0
