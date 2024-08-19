@@ -568,7 +568,7 @@ def prepare_ml_dataset_overall(real_estate_df):
     
     # Step 17: Select the original and new variables for machine learning
     ml_dataset = filtered_df[[
-        'geometry', 'job_density', 'distance_to_nearest_station', 'distance_to_job_center', 'job_count_5km', 
+        'geometry', 'job_density', 'distance_to_nearest_station', 'nearest_station_name', 'departures_per_hour', 'distance_to_job_center', 'job_count_5km', 
         'latitude', 'longitude', 'propertyType', 'energyClass', 'priceCash', 'selfsale', 'rooms', 'size', 
         'lotSize', 'floor', 'buildYear', 'city', 'isForeclosure', 'zipCode', 'area', 'daysForSale', 
         'net', 'exp', 'basementSize', 'views', 'projectSaleUrl', 'additionalBuildings', 'businessArea', 
