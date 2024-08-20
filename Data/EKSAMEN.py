@@ -577,8 +577,8 @@ def process_and_calculate_nearest_station(real_estate_df, station_df_med_afgange
         distance, index = station_tree.query(house_coord, k=1)
         nearest_station = stations[index]
         geodesic_distance = geodesic(house_coord, nearest_station).kilometers
-        station_name = station_df.iloc[index]['Station_x']
-        departures = station_df.iloc[index]['Afgange_x']
+        station_name = station_df.iloc[index]['stationName']
+        departures = station_df.iloc[index]['Afgange_corrected']
         return geodesic_distance, station_name, departures
     
     # Apply function to all houses
@@ -928,3 +928,33 @@ def regression_plot_houseprices_jobcount(ml_dataset):
     plt.xlabel("Number of Jobs within 5km")
     plt.ylabel("Price (DKK)")
     plt.show()
+
+
+import geopandas as gpd
+import numpy as np
+from shapely.geometry import Point, box
+
+def convert_density_to_jobs_per_acre(job_density, cell_size):
+    # Convert square meters to acres (1 acre = 4046.86 square meters)
+    area_in_acres = (cell_size * cell_size) / 4046.86
+    return job_density / area_in_acres
+
+def identify_employment_hubs(grid_cells, cell_size=1000, density_threshold=10, job_threshold=10000):
+    # Convert job density to jobs per acre
+    grid_cells['density_jobs_per_acre'] = convert_density_to_jobs_per_acre(grid_cells['job_density'], cell_size)
+    
+    # Step 1: Filter cells that meet the density criterion
+    potential_hubs = grid_cells[grid_cells['density_jobs_per_acre'] >= density_threshold].copy()
+    
+    # Step 2: Calculate total jobs in each cell
+    potential_hubs['total_jobs'] = potential_hubs['job_density'] * (cell_size * cell_size) / 4046.86
+    
+    # Step 3: Identify clusters where total jobs exceed the job threshold
+    # Group by an appropriate column if 'index_right' does not exist
+    if 'index_right' in potential_hubs.columns:
+        employment_hubs = potential_hubs.groupby('index_right').filter(lambda x: x['total_jobs'].sum() >= job_threshold)
+    else:
+        # Assuming geometry is a unique identifier here
+        employment_hubs = potential_hubs.groupby(potential_hubs.index).filter(lambda x: x['total_jobs'].sum() >= job_threshold)
+    
+    return employment_hubs
