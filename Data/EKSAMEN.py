@@ -366,7 +366,19 @@ class JobScraper:
         with open(self.completed_pages_file, 'w') as f:
             json.dump(list(self.completed_pages), f)
 
+def load_jobs():
+    print("Loading jobs dataset...")
+    job_df = pd.read_csv('final_job_postings.csv', encoding='utf-8')
+    print(f"Number of jobs before cleaning: {len(job_df)}")
+    job_df = job_df.drop_duplicates()
+    print(f"Number of jobs after deleting duplicates: {len(job_df)}")
+    job_df = job_df[job_df['Country'] == "Danmark"]
+    print(f"Number of jobs after removing jobs outside of Denmark: {len(job_df)}")
+    job_df = job_df[job_df['HasLocationValues'] == True]
+    print(f"Number of jobs after segmenting for having Location Values: {len(job_df)}")
+    return job_df
 
+        
 def get_and_clean_stations():
     url_station = "https://www.dsb.dk/api/stations/getstationlist"
     
@@ -732,7 +744,7 @@ def prepare_ml_dataset_overall(real_estate_df):
     
     # Step 17: Select the original and new variables for machine learning
     ml_dataset = filtered_df[[
-        'geometry', 'job_density', 'distance_to_nearest_station', 'nearest_station_name', 'departures_per_hour', 'distance_to_job_center', 'job_count_5km', 
+        'geometry', 'job_density', 'id', 'street', 'distance_to_nearest_station', 'nearest_station_name', 'departures_per_hour', 'distance_to_job_center', 'job_count_5km', 
         'latitude', 'longitude', 'propertyType', 'energyClass', 'priceCash', 'selfsale', 'rooms', 'size', 
         'lotSize', 'floor', 'buildYear', 'city', 'isForeclosure', 'zipCode', 'area', 'daysForSale', 
         'net', 'exp', 'basementSize', 'views', 'projectSaleUrl', 'additionalBuildings', 'businessArea', 
